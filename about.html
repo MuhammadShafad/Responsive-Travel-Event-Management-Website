@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTravel</title>
+
+    <!-- Tailwind CSS CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+
+    <!--Navbar-->
+    <header class="fixed top-0 left-0 w-full shadow mb-2 bg-stone-100 z-10">
+      <div
+        class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
+        <a href="./index.html"
+          class="flex items-center whitespace-nowrap text-2xl font-black">
+          <span class="text-gray-800"> <span
+              class="text-teal-500">Go</span>Travel</span>
+        </a>
+        <input type="checkbox" class="peer hidden" id="navbar-open" />
+        <label class="absolute top-5 right-7 cursor-pointer md:hidden"
+          for="navbar-open">
+          <span class="sr-only">Toggle Navigation</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+
+        <nav aria-label="Header Navigation"
+          class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
+          <ul
+            class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./about.html">About</a>
+            </li>
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./travellist.html">Tours</a>
+            </li>
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./destination.html">Destinations</a>
+            </li>
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./gallery.html">Gallery</a>
+            </li>
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./contact.html">
+                <button
+                  class="rounded-md border-2 border-teal-600 px-6 py-1 font-medium text-teal-500 transition-colors hover:bg-teal-500 hover:text-white">
+                  Contact
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section
+      class="bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 py-20 px-4 md:px-8 text-white"
+      style="margin-top: 50px;">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-4xl font-extrabold leading-tight sm:text-5xl">
+          Who We Are
+        </h2>
+        <p class="mt-4 text-xl text-gray-200 max-w-3xl mx-auto">
+          At <span class="font-bold text-yellow-400">GoTravel</span>, we are
+          passionate about curating personalized, one-of-a-kind travel
+          experiences for corporate events, destination weddings, retreats, and
+          private vacations.
+          Whether you are looking for adventure or relaxation, we will design
+          the perfect escape.
+        </p>
+      </div>
+
+      <!-- Our Story Section -->
+      <div class="mt-12 flex flex-col-reverse lg:flex-row items-center">
+        <div class="lg:w-1/2 px-4 text-center lg:text-left">
+          <h3 class="text-3xl font-bold text-white">Our Story</h3>
+          <p class="mt-6 text-lg text-gray-200">
+            Founded by seasoned travelers and event planners, we combine our
+            passion for discovering new places with expert planning and
+            logistics. With over a decade of experience, we’ve crafted hundreds
+            of seamless, unforgettable events worldwide.
+          </p>
+          <p class="mt-4 text-lg text-gray-200">
+            Our mission is simple: to turn your dream getaway into a reality by
+            ensuring everything is handled, from venue selection to itineraries
+            and even on-site coordination.
+          </p>
+        </div>
+        <div class="lg:w-1/2 mt-8 lg:mt-0 px-6">
+          <img src="./images/about.jpeg" alt="Our Story"
+            class="rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+            height="400px" width="400px">
+        </div>
+      </div>
+
+      <!-- Why Choose Us Section -->
+      <div class="mt-16">
+        <h3 class="text-3xl font-bold text-center text-white">
+          Why Choose Us?
+        </h3>
+        <div
+          class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <!-- Feature 1 -->
+          <div
+            class="bg-white text-gray-900 p-6 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300">
+            <div
+              class="mb-4 p-4 bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+              <i class="fas fa-globe-americas text-2xl"></i>
+            </div>
+            <h4 class="text-2xl font-semibold text-center">Global Reach</h4>
+            <p class="mt-4 text-center">We specialize in planning events in
+              exotic destinations worldwide, bringing your dreams to life in the
+              most scenic locations.</p>
+          </div>
+          <!-- Feature 2 -->
+          <div
+            class="bg-white text-gray-900 p-6 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300">
+            <div
+              class="mb-4 p-4 bg-yellow-400 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+              <i class="fas fa-cogs text-2xl"></i>
+            </div>
+            <h4 class="text-2xl font-semibold text-center">Seamless
+              Coordination</h4>
+            <p class="mt-4 text-center">From transportation to accommodation, we
+              manage every detail so you can relax and enjoy your experience
+              without a worry.</p>
+          </div>
+          <!-- Feature 3 -->
+          <div
+            class="bg-white text-gray-900 p-6 rounded-xl shadow-xl transform hover:scale-105 transition-transform duration-300">
+            <div
+              class="mb-4 p-4 bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+              <i class="fas fa-heart text-2xl"></i>
+            </div>
+            <h4 class="text-2xl font-semibold text-center">Personalized
+              Touch</h4>
+            <p class="mt-4 text-center">We listen closely to your needs,
+              offering customized experiences that reflect your unique
+              preferences and style.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action Section -->
+      <div class="mt-16 text-center">
+        <p class="text-lg text-gray-200">
+          Ready to create memories that will last a lifetime? Let’s start
+          planning your next great adventure!
+        </p>
+        <a href="./contact.html"
+          class="mt-6 inline-block bg-teal-500 text-white py-3 px-8 rounded-lg font-bold text-xl hover:bg-white hover:text-teal-500 transition duration-300">
+          Contact Us Today
+        </a>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <section class="bg-stone-100">
+      <footer class="flex flex-col space-y-10 justify-center m-10 mt-24 ">
+
+        <nav
+          class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+          <a class="hover:text-gray-900" href="./index.html">Home</a>
+          <a class="hover:text-gray-900" href="./travellist.html">Tours</a>
+          <a class="hover:text-gray-900"
+            href="./destination.html">Destinations</a>
+          <a class="hover:text-gray-900" href="./gallery.html">Gallery</a>
+          <a class="hover:text-gray-900" href="./contact.html">Contact</a>
+        </nav>
+
+        <div class="flex justify-center space-x-5">
+          <a href="https://facebook.com" target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+          </a>
+          <a href="https://linkedin.com" target="_blank"
+            rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+          </a>
+          <a href="https://instagram.com" target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+          </a>
+          <a href="https://messenger.com" target="_blank"
+            rel="noopener noreferrer">
+            <img
+              src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
+          </a>
+          <a href="https://twitter.com" target="_blank"
+            rel="noopener noreferrer">
+            <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+          </a>
+        </div>
+        <p class="text-center text-gray-700 font-medium">&copy; 2024 Go Travel
+          Ltd. All rights reservered.</p>
+      </footer>
+
+    </section>
+
+  </body>
+</html>

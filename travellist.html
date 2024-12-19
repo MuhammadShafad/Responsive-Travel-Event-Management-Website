@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GoTravel</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+    @media (max-width: 768px) {
+      .responsive-text {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+    </head>
+    <body>
+        <!--Navbar-->
+    <header class="fixed top-0 left-0 w-full shadow mb-2 bg-stone-100 z-10">
+        <div
+            class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
+            <a href="./index.html" class="flex items-center whitespace-nowrap text-2xl font-black">
+                <span class="text-gray-800"> <span class="text-teal-500">Go</span>Travel</span>
+            </a>
+            <input type="checkbox" class="peer hidden" id="navbar-open" />
+            <label class="absolute top-5 right-7 cursor-pointer md:hidden" for="navbar-open">
+                <span class="sr-only">Toggle Navigation</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </label>
+           
+            <nav aria-label="Header Navigation"
+            class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
+                <ul class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+                    <li class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./about.html">About</a>
+            </li>
+                    <li class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+                        <a href="./travellist.html">Tours</a>
+                    </li>
+                    <li class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+                        <a href="./destination.html">Destinations</a>
+                    </li>
+                    <li class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+                        <a href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+                        <a href="./contact.html">
+                            <button
+                                class="rounded-md border-2 border-teal-600 px-6 py-1 font-medium text-teal-500 transition-colors hover:bg-teal-500 hover:text-white">
+                                Contact
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+        <!--Travel list section-->
+        <!-- Top Section -->
+        <section class="relative h-screen md:h-[500px] flex items-center">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img src="./images/maldives1.jpg" alt="Colosseum Tour"
+                    class="w-full h-full object-cover brightness-75">
+            </div>
+            <!-- Text Content -->
+            <div class="relative text-white px-4">
+                <p class="uppercase text-m tracking-widest mb-2">Choose Your
+                    Tour</p>
+                <h1 class="text-5xl md:text-6xl font-bold responsive-text">
+                    Most Popular <span class="text-teal-500">Tours</span>
+                </h1>
+            </div>
+        </section>
+
+        <!-- Tour Cards Container -->
+        <section class="container mx-auto px-4 py-10">
+            <!-- First Section of Tour Cards -->
+            <div class="flex flex-wrap gap-6 justify-center">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-[300px]">
+                    <div class="relative">
+                        <a href="./traveldetailsafrica.html">
+                            <img src="./images/africa.webp" alt="Africa Safari"
+                                class="w-full h-[200px] object-cover">
+
+                            <span
+                                class="absolute top-3 left-3 bg-teal-500 text-white text-xs px-3 py-1 rounded-md">Best
+                                Seller</span>
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-semibold text-lg mb-2">Africa – Amazing
+                            African Safari</h2>
+                        <p class="text-sm text-gray-600 mb-2">From <span
+                                class="text-teal-500 font-bold">₹30,000</span></p>
+                        <ul class="text-gray-500 text-sm space-y-1 mb-3">
+                            <li>⏱️ 8 Days</li>
+                            <li>📅 Availability : Jan – Oct</li>
+                            <li>🌍 Africa</li>
+                            <li>👤 Min Age : 12+</li>
+                            <li>👥 Max People : 200</li>
+                        </ul>
+                        <div class="text-yellow-400 text-sm flex items-center">
+                            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(50
+                                Reviews)</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-[300px]">
+                    <div class="relative">
+                        <a href="./traveldetailsdubai.html">
+                            <img src="./images/dubai.jpg" alt="Dubai Tour"
+                                class="w-full h-[200px] object-cover">
+                            <span
+                                class="absolute top-3 left-3 bg-teal-500 text-white text-xs px-3 py-1 rounded-md">Best
+                                Seller</span>
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-semibold text-lg mb-2">Dubai – All
+                            Stunning Places</h2>
+                        <p class="text-sm text-gray-600 mb-2">From <span
+                                class="text-teal-500 font-bold">₹25,999</span></p>
+                        <ul class="text-gray-500 text-sm space-y-1 mb-3">
+                            <li>⏱️ 15 Days</li>
+                            <li>📅 Availability : Apr – Oct</li>
+                            <li>🏙️ Dubai</li>
+                            <li>👤 Min Age : 11+</li>
+                            <li>👥 Max People : 40</li>
+                        </ul>
+                        <div class="text-yellow-400 text-sm flex items-center">
+                            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(100
+                                Review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-[300px]">
+                    <div class="relative">
+                        <a href="./traveldetailsparis.html">
+                            <img src="./images/paris.jpeg" alt="Venice Tour"
+                                class="w-full h-[200px] object-cover">
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-semibold text-lg mb-2">Enquiry Form Only
+                            – Paris – 6 Days</h2>
+                        <p class="text-sm text-gray-600 mb-2">
+                            <span
+                                class="line-through text-gray-400">₹80,000</span>
+                            <span
+                                class="text-teal-500 font-bold ml-2">₹64,000</span>
+                        </p>
+                        <ul class="text-gray-500 text-sm space-y-1 mb-3">
+                            <li>⏱️ 9 Days</li>
+                            <li>📅 Availability : Jul – Dec</li>
+                            <li>🏛️ Paris</li>
+                            <li>👤 Min Age : 9+</li>
+                            <li>👥 Max People : 34</li>
+                        </ul>
+                        <div class="text-yellow-400 text-sm flex items-center">
+                            ⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(34
+                                Review)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Section of Tour Cards -->
+            <div class="flex flex-wrap gap-6 justify-center mt-6">
+                <!-- Card 4 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-[300px]">
+                    <div class="relative">
+                        <a href="./traveldetailsmanali.html">
+                            <img src="./images/manali.jpeg" alt="Africa Safari"
+                                class="w-full h-[200px] object-cover">
+                            <span
+                                class="absolute top-3 left-3 bg-teal-500 text-white text-xs px-3 py-1 rounded-md">Best
+                                Seller</span>
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-semibold text-lg mb-2">EXCLUSIVE Manali
+                            from Delhi</h2>
+                        <p class="text-sm text-gray-600 mb-2">From <span
+                                class="text-teal-500 font-bold">₹15,999</span></p>
+                        <ul class="text-gray-500 text-sm space-y-1 mb-3">
+                            <li>⏱️ 7 Days</li>
+                            <li>📅 Availability : Jan – Oct</li>
+                            <li>🌍 Manali</li>
+                            <li>👤 Min Age : 12+</li>
+                            <li>👥 Max People : 280</li>
+                        </ul>
+                        <div class="text-yellow-400 text-sm flex items-center">
+                            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(123
+                                Review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-[300px]">
+                    <div class="relative">
+                        <a href="./traveldetailskashmir.html">
+                            <img src="./images/kashmir.jpg" alt="Dubai Tour"
+                                class="w-full h-[200px] object-cover">
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-semibold text-lg mb-2">Peaceful Kashmir
+                            Holiday</h2>
+                        <p class="text-sm text-gray-600 mb-2">From <span
+                                class="text-teal-500 font-bold">₹34,000</span></p>
+                        <ul class="text-gray-500 text-sm space-y-1 mb-3">
+                            <li>⏱️ 10 Days</li>
+                            <li>📅 Availability : Apr – Oct</li>
+                            <li>🏙️ Kashmir</li>
+                            <li>👤 Min Age : 11+</li>
+                            <li>👥 Max People : 30</li>
+                        </ul>
+                        <div class="text-yellow-400 text-sm flex items-center">
+                            ⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(135
+                                Review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-[300px]">
+                    <div class="relative">
+                        <a href="./traveldetailsvenice.html">
+                            <img src="./images/venice.jpeg" alt="Venice Tour"
+                                class="w-full h-[200px] object-cover">
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-semibold text-lg mb-2">Venice, Rome and
+                            Milan – 9 Days</h2>
+                        <p class="text-sm text-gray-600 mb-2">From
+                            <span
+                                class="text-teal-500 font-bold ml-2">₹67,500</span>
+                        </p>
+                        <ul class="text-gray-500 text-sm space-y-1 mb-3">
+                            <li>⏱️ 9 Days</li>
+                            <li>📅 Availability : Jul – Dec</li>
+                            <li>🏛️ Venice & Milan</li>
+                            <li>👤 Min Age : 9+</li>
+                            <li>👥 Max People : 76</li>
+                        </ul>
+                        <div class="text-yellow-400 text-sm flex items-center">
+                            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(78
+                                Review)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Section of Tour Cards -->
+            <div class="flex flex-wrap gap-6 justify-center mt-6">
+                <!-- Card 7 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-[300px]">
+                    <div class="relative">
+                        <a href="./traveldetailsmoscow.html">
+                            <img src="./images/moscow.jpg" alt="Africa Safari"
+                                class="w-full h-[200px] object-cover">
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-semibold text-lg mb-2">Two Moscow Tour
+                            of 7 days</h2>
+                        <p class="text-sm text-gray-600 mb-2">From <span
+                                class="text-teal-500 font-bold">₹1,20,999</span></p>
+                        <ul class="text-gray-500 text-sm space-y-1 mb-3">
+                            <li>⏱️ 7 days</li>
+                            <li>📅 Availability : Jan – Oct</li>
+                            <li>🌍 Moscow</li>
+                            <li>👤 Min Age : 12+</li>
+                            <li>👥 Max People : 220</li>
+                        </ul>
+                        <div class="text-yellow-400 text-sm flex items-center">
+                            ⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(173
+                                Review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-[300px]">
+                    <div class="relative">
+                        <a href="./traveldetailsaustria.html">
+                            <img src="./images/austria.jpeg" alt="Dubai Tour"
+                                class="w-full h-[200px] object-cover">
+                            <span
+                                class="absolute top-3 left-3 bg-teal-500 text-white text-xs px-3 py-1 rounded-md">Best
+                                Seller</span>
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-semibold text-lg mb-2">Austria – 6 Days
+                            in Vienna, Hallstatt</h2>
+                        <p class="text-sm text-gray-600 mb-2">From <span
+                                class="text-teal-500 font-bold">₹98,000</span></p>
+                        <ul class="text-gray-500 text-sm space-y-1 mb-3">
+                            <li>⏱️ 6 Days</li>
+                            <li>📅 Availability : Apr – Oct</li>
+                            <li>🏙️ Austria</li>
+                            <li>👤 Min Age : 11+</li>
+                            <li>👥 Max People : 80</li>
+                        </ul>
+                        <div class="text-yellow-400 text-sm flex items-center">
+                            ⭐⭐⭐⭐⭐<span class="text-gray-500 ml-1">(54
+                                Review)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div
+                    class="bg-white shadow-lg rounded-lg overflow-hidden w-full sm:w-1/2 md:w-[300px]">
+                    <div class="relative">
+                        <a href="./traveldetailsoaho.html">
+                            <img src="./images/oahu.webp" alt="Venice Tour"
+                                class="w-full h-[200px] object-cover">
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-semibold text-lg mb-2">5-Day Oahu Tour:
+                            Honolulu</h2>
+                        <p class="text-sm text-gray-600 mb-2"> From
+                            <span
+                                class="text-teal-500 font-bold ml-2">₹1,34,560</span>
+                        </p>
+                        <ul class="text-gray-500 text-sm space-y-1 mb-3">
+                            <li>⏱️ 5 Days</li>
+                            <li>📅 Availability : Jul – Dec</li>
+                            <li>🏛️ Venice & Milan</li>
+                            <li>👤 Min Age : 9+</li>
+                            <li>👥 Max People : 56</li>
+                        </ul>
+                        <div class="text-yellow-400 text-sm flex items-center">
+                            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(89
+                                Review)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer  -->
+    <section class="bg-stone-100">
+        <footer class="flex flex-col space-y-10 justify-center m-10 mt-24 ">
+
+            <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+                <a class="hover:text-gray-900" href="./index.html">Home</a>
+                <a class="hover:text-gray-900" href="./travellist.html">Tours</a>
+                <a class="hover:text-gray-900" href="./destination.html">Destinations</a>
+                <a class="hover:text-gray-900" href="./gallery.html">Gallery</a>
+                <a class="hover:text-gray-900" href="./contact.html">Contact</a>
+            </nav>
+
+            <div class="flex justify-center space-x-5">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+                </a>
+                <a href="https://messenger.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+                </a>
+            </div>
+            <p class="text-center text-gray-700 font-medium">&copy; 2024 Go Travel Ltd. All rights reservered.</p>
+        </footer>
+
+
+    </section>
+
+
+    </body>
+</html>

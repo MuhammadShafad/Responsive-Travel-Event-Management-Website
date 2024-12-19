@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTravel</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    @media (max-width: 640px) {
+      .custom-card {
+        padding: 1rem;
+      }
+    }
+  </style>
+  </head>
+  <body class="font-sans leading-normal tracking-normal">
+    <!--Navbar-->
+    <header class="fixed top-0 left-0 w-full shadow mb-2 bg-stone-100 z-10">
+      <div
+        class="relative flex max-w-screen-xl flex-col overflow-hidden px-4 py-4 md:mx-auto md:flex-row md:items-center">
+        <a href="./index.html"
+          class="flex items-center whitespace-nowrap text-2xl font-black">
+          <span class="text-gray-800"> <span
+              class="text-teal-500">Go</span>Travel</span>
+        </a>
+        <input type="checkbox" class="peer hidden" id="navbar-open" />
+        <label class="absolute top-5 right-7 cursor-pointer md:hidden"
+          for="navbar-open">
+          <span class="sr-only">Toggle Navigation</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+
+        <nav aria-label="Header Navigation"
+          class="peer-checked:mt-8 peer-checked:max-h-56 flex max-h-0 w-full flex-col items-center justify-between overflow-hidden transition-all md:ml-24 md:max-h-full md:flex-row md:items-start">
+          <ul
+            class="flex flex-col items-center space-y-2 md:ml-auto md:flex-row md:space-y-0">
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./about.html">About</a>
+          </li>
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./travellist.html">Tours</a>
+            </li>
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./destination.html">Destinations</a>
+            </li>
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./gallery.html">Gallery</a>
+            </li>
+            <li
+              class="text-gray-800 md:mr-12 hover:text-teal-500 duration-200 cursor-pointer">
+              <a href="./contact.html">
+                <button
+                  class="rounded-md border-2 border-teal-600 px-6 py-1 font-medium text-teal-500 transition-colors hover:bg-teal-500 hover:text-white">
+                  Contact
+                </button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto p-4" style="margin-top: 80px;">
+      <!-- Header -->
+      <div class="bg-white p-6 shadow-lg rounded-md">
+        <div class="flex flex-wrap justify-between">
+          <div>
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-800">
+              Africa – Amazing African Safari
+            </h1>
+            <div class="text-sm text-gray-500 mt-1">
+              ⭐ 5 Superb | 50 Reviews
+            </div>
+            <div class="text-gray-700 mt-3">
+              <p>📅 7 Days 7 Nights | 👥 Group: 1 - 200 People | 📍 Africa</p>
+            </div>
+          </div>
+          <!-- Price -->
+          <div class="text-right">
+            <div class="text-gray-500 line-through text-lg">₹40,000</div>
+            <div class="text-3xl font-bold text-teal-600">₹30,000</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Information Section -->
+      <div class="mt-6 bg-white p-6 shadow-lg rounded-md">
+        <h2 class="text-xl font-semibold mb-4 text-gray-700">Information</h2>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          Embark on a mesmerizing journey to Africa, a land of unparalleled
+          natural beauty, vibrant cultures, and breathtaking wildlife. This
+          unforgettable trip offers you the chance to explore the iconic
+          landscapes of the continent, from the sweeping savannas of the
+          Serengeti to the majestic Victoria Falls. Witness the Big Five—lions,
+          elephants, leopards, rhinos, and buffalos—in their natural habitats
+          during thrilling safaris. Immerse yourself in local traditions by
+          visiting tribal villages and learning about their ancient ways of
+          life. Marvel at Africa's diverse scenery, from golden deserts and lush
+          rainforests to picturesque coastlines. Whether it's watching a magical
+          sunset over the African plains or stargazing under clear, endless
+          skies, this trip promises moments of awe, adventure, and serenity.
+          Perfect for nature lovers, cultural explorers, and thrill-seekers
+          alike, Africa offers an experience that touches the heart and soul.
+        </p>
+        <!-- Travel Details -->
+        <div class="border-t border-gray-200 pt-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <p><strong>Departure:</strong> NYC International Airport</p>
+              <p><strong>Departure Time:</strong> 7:00 AM</p>
+              <p><strong>Return Time:</strong> Approx. 3:30 PM</p>
+            </div>
+            <div>
+              <p><strong>Dress Code:</strong> Casual, comfortable and light</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Price Includes -->
+        <div class="mt-6">
+          <h3 class="text-lg font-medium mb-2">Price Includes:</h3>
+          <ul class="list-none space-y-2 text-gray-600">
+            <li>✅ Accommodation</li>
+            <li>✅ Porter & Personal Guide</li>
+            <li>✅ Insurance</li>
+            <li>✅ Breakfast</li>
+            <li>✅ Transportation / Car</li>
+          </ul>
+        </div>
+
+        <!-- Price Excludes -->
+        <div class="mt-6">
+          <h3 class="text-lg font-medium mb-2">Price Excludes:</h3>
+          <ul class="list-none space-y-2 text-gray-600">
+            <li>❌ Flights</li>
+            <li>❌ Lunch</li>
+            <li>❌ Typical Souvenir</li>
+            <li>❌ Sunscreen, toiletries and personal items</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Form Section -->
+      <div class="mt-6 bg-white p-6 shadow-lg rounded-md">
+        <h2 class="text-xl font-semibold mb-4 text-gray-700">Book Now</h2>
+        <form class="space-y-4">
+          <div>
+            <input type="text" placeholder="Full Name"
+              class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">
+          </div>
+          <div>
+            <input type="email" placeholder="Email Address"
+              class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">
+          </div>
+          <div>
+            <input type="date"
+              class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">
+          </div>
+          <div>
+            <input type="number" placeholder="People"
+              class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">
+          </div>
+          <div>
+            <textarea placeholder="Your Enquiry" rows="4"
+              class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+          </div>
+          <a href="./bookatrip.html">
+            <button type="submit"
+              class="w-full bg-teal-500 text-white p-2 rounded-md hover:bg-teal-500 transition">
+              Book Now
+            </button>
+          </a>
+        </form>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="relative w-full h-auto mt-5 mb-5">
+      <!-- Background Image Section -->
+      <div class="relative h-full bg-cover bg-center"
+        style="background-image: url('./images/africa.webp');">
+        <div class="w-full h-full bg-opacity-50 bg-blue-900">
+          <div
+            class="flex flex-col lg:flex-row justify-between items-center px-6 py-16 lg:px-16">
+            <!-- Left Content -->
+            <div
+              class="text-white lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
+              <h2 class="text-2xl md:text-4xl font-bold mb-4 leading-tight">
+                We Provide Top Destinations Especially <br> For You. Book Now
+                and Enjoy!
+              </h2>
+              <div class="flex items-center justify-center lg:justify-start">
+                <div>
+                  <p class="text-lg font-semibold"> Call Now</p>
+                  <p class="text-3xl font-bold mt-2 mb-1">+91 9074505209</p>
+                  <p class="text-sm font-light italic"> Call us, it’s
+                    toll-free.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial Card -->
+            <div class="bg-white rounded-lg shadow-lg lg:w-2/5 w-full p-6">
+              <h3
+                class="text-teal-500 font-medium tracking-wider mb-2">TESTIMONIALS</h3>
+              <h2 class="text-2xl font-bold mb-4 text-gray-800">TRAVELERS
+                REVIEWS</h2>
+              <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                "Travel experiences bring you great moments, providing unique opportunities and enjoyable tours that leave lasting memories."
+              </p>
+              <!-- Reviewer -->
+              <div class="flex items-center">
+                <img src="./images/reviewer.jpg" alt="Reviewer"
+                  class="rounded-full w-12 h-12 object-cover mr-4">
+                <div>
+                  <p class="font-semibold text-gray-700">Muhammad Shafad</p>
+                  <p class="text-sm text-gray-500">Guest review</p>
+                  <!-- Star Ratings -->
+                  <div class="text-yellow-400 mt-1">
+                    ⭐⭐⭐⭐⭐
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <section class="bg-stone-100">
+      <footer class="flex flex-col space-y-10 justify-center m-10 mt-24 ">
+
+          <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
+              <a class="hover:text-gray-900" href="./index.html">Home</a>
+              <a class="hover:text-gray-900" href="./travellist.html">Tours</a>
+              <a class="hover:text-gray-900" href="./destination.html">Destinations</a>
+              <a class="hover:text-gray-900" href="./gallery.html">Gallery</a>
+              <a class="hover:text-gray-900" href="./contact.html">Contact</a>
+          </nav>
+
+          <div class="flex justify-center space-x-5">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.icons8.com/fluent/30/000000/linkedin-2.png" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+              </a>
+              <a href="https://messenger.com" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+              </a>
+          </div>
+          <p class="text-center text-gray-700 font-medium">&copy; 2024 Go Travel Ltd. All rights reservered.</p>
+      </footer>
+
+
+  </section>
+  </body>
+</html>
